@@ -1,14 +1,13 @@
 import { FiShoppingCart } from "@react-icons/all-files/fi/FiShoppingCart";
-import "./CartWidget.css";
 
 const CartWidget = ({ cantCarrito }) => {
   return (
     <>
-      <button className="btn btn-dark btn-cart">
+      <button className="btn btn-dark pt-2 btn-Cart">
         <FiShoppingCart />
       </button>
-      <div className="cart-div">
-        <p className="cart-items">{cantCarrito}</p>
+      <div className="d-flex justify-content-center  border border-white rounded-circle px-2 py-1">
+        <p className="text-white my-auto mx-auto">{cantCarrito}</p>
       </div>
     </>
   );

@@ -4,7 +4,7 @@ import "./Nombre.css";
 const Nombre = () => {
   return (
     <>
-      <h1 className="branding">La Maison des Arts</h1>
+      <h1 className="text-white m-0 ">La Maison des Arts</h1>
     </>
   );
 };
