@@ -3,9 +3,14 @@ import React from "react";
 const Register = () => {
   return (
     <>
-      <ul className="navbar-nav  mb-2 mb-lg-0">
-        <li className="nav-item">
-          <a className="nav-link" href="#">
+      <ul className="navbar-nav   registro">
+        <li className=" ">
+          <a className="nav-link" href="#as">
+            <button className="btn btn-dark">Ingresá</button>
+          </a>
+        </li>
+        <li className=" ">
+          <a className="nav-link" href="#as">
             <button className="btn btn-dark">Registro</button>
           </a>
         </li>

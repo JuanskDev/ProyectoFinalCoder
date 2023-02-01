@@ -1,0 +1,117 @@
+.cardProducto {
+  width: 18rem;
+  margin: 4px;
+  background-color: hsl(0, 0%, 97%);
+}
+
+.cardBody {
+  background-color: white;
+  margin-bottom: 3px;
+  text-align: center;
+}
+
+img {
+  margin-top: 3px;
+}
+
+.cardProductos {
+  margin: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemDetail {
+  max-width: 85%;
+  margin-top: 40px;
+}
+
+.imgDetail:hover {
+  scale: 1.2;
+  z-index: -1;
+}
+
+.imgAllProd {
+  min-height: 258px;
+}
+
+.nombre {
+  position: absolute;
+  top: 2%;
+  left: 30%;
+}
+
+.carrito {
+  position: absolute;
+  top: 2%;
+  left: 80%;
+}
+
+.registro {
+  display: hidden;
+}
+
+@media (min-width: 560px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .nombre {
+    position: absolute;
+    top: 14%;
+    left: 50%;
+  }
+  .carrito {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .registro {
+    position: absolute;
+    right: 6%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .caja-item {
+    padding: 7% 4%;
+  }
+
+  .item-name {
+    font-size: 30px;
+  }
+
+  .item-price {
+    font-size: 24px;
+  }
+
+  .item-stock {
+    font-size: 24px;
+  }
+
+  .item-cantidad {
+    font-size: 24px;
+    padding-right: 10px;
+  }
+
+  .div-item-count {
+    display: flex;
+    align-items: center;
+  }
+
+  .item-count-btn {
+    position: relative;
+    top: 7px;
+  }
+
+  .item-btn {
+    position: relative;
+    top: 15px;
+  }
+  .nombre {
+    position: absolute;
+    top: 14%;
+    left: 48%;
+  }
+}

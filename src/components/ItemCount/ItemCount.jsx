@@ -10,15 +10,15 @@ const ItemCount = ({ stock, valorInicial }) => {
   return (
     <>
       <div>
-        <div className="">
-          <p className="m-0">Cantidad:</p>
+        <div className="div-item-count">
+          <p className="m-0 item-cantidad">Cantidad:</p>
           <button
             className="btn btn-outline-secondary my-1 "
             onClick={() => restador()}
           >
             -
           </button>
-          {contador}
+          <span className="p-1 ">{contador}</span>
           <button
             className="btn btn-outline-secondary my-1"
             onClick={() => sumador()}
@@ -27,7 +27,9 @@ const ItemCount = ({ stock, valorInicial }) => {
           </button>
         </div>
         <div>
-          <button className="btn btn-light my-2">Agregar al carrito</button>
+          <button className="btn btn-light my-2 item-count-btn">
+            Agregar al carrito
+          </button>
         </div>
       </div>
     </>

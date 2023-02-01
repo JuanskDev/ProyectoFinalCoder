@@ -1,10 +1,16 @@
 import React from "react";
-import "./Nombre.css";
+
+import { Link } from "react-router-dom";
 
 const Nombre = () => {
   return (
     <>
-      <h1 className="text-white m-0 ">La Maison des Arts</h1>
+      <Link
+        className="list-group-item text-white text-xl m-0 mt-1 nombre"
+        to="/"
+      >
+        <h2>Virtual Gallery</h2>
+      </Link>
     </>
   );
 };

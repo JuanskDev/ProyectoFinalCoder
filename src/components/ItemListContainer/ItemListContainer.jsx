@@ -1,41 +1,38 @@
 import React from "react";
-import Item from "../Item/Item";
-import cuadro1 from "../../assets/cuadro1.png";
-import cuadro2 from "../../assets/cuadro2.png";
-import cuadro3 from "../../assets/cuadro3.png";
-import ceramica1 from "../../assets/ceramica1.png";
-import ItemCount from "../ItemCount/ItemCount";
-
+import { useState, useEffect } from "react";
+import ItemList from "../ItemList/ItemList";
+import { useParams } from "react-router-dom";
 const ItemListContainer = () => {
-  return (
-    <>
-      <div className="container-fluid align-self-center align-items-baseline">
-        <Item
-          title={"Bauhaus Figuras Geometricas"}
-          image={cuadro1}
-          price={8000}
-        />
-        <ItemCount valorInicial={1} stock={9} />
-      </div>
-      <div className="container-fluid align-self-center align-items-baseline">
-        <Item title={"Modernos Living Bauhaus"} image={cuadro2} price={4200} />
-        <ItemCount valorInicial={1} stock={4} />
-      </div>
+  const [productos, setProductos] = useState([]);
 
-      <div className="container-fluid align-self-center align-items-baseline">
-        <Item
-          title={"Bauhaus Figuras Geometricas"}
-          image={cuadro3}
-          price={8800}
-        />
-        <ItemCount valorInicial={1} stock={6} />
-      </div>
-      <div className="container-fluid align-self-center align-items-baseline">
-        <Item title={"TAZA DE CAFÉ KAMA NUDE"} image={ceramica1} price={3300} />
-        <ItemCount valorInicial={1} stock={3} />
-      </div>
-    </>
-  );
+  const { idCategoria } = useParams();
+
+  useEffect(() => {
+    if (idCategoria) {
+      fetch("../json/productos.json")
+        .then((response) => response.json())
+        .then((productosArray) => {
+          const products = productosArray.filter(
+            (prod) => prod.idCategoria === idCategoria
+          );
+          const productsList = ItemList({ products }); //Array de productos en JS
+          setProductos(productsList);
+        });
+    } else {
+      fetch("./json/productos.json")
+        .then((response) => response.json())
+        .then((products) => {
+          console.log(products);
+          const productsList = ItemList({ products }); //Array de productos en JSX
+          console.log(productsList);
+          setProductos(productsList);
+        });
+    }
+  }, [idCategoria]);
+  //[] cuando se renderiza
+  //[prop] cuando se renderiza y cuando se actualiza
+
+  return <div className="row justify-content-around m-4">{productos}</div>;
 };
 
 export default ItemListContainer;

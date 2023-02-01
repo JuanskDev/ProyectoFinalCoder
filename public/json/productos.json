@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "idCategoria": "cuadros",
+    "nombre": "Bauhaus Figuras Geometricas",
+    "precio": 8000,
+    "stock": 10,
+    "img": "../img/cuadro1.png",
+    "descripcion": "Cuadros De Bauhaus Abstractos Decorativos Modernos 35x50cm"
+  },
+  {
+    "id": 2,
+    "idCategoria": "cuadros",
+    "nombre": "Bauhaus Figuras Geometricas",
+    "precio": 8800,
+    "stock": 4,
+    "img": "../img/cuadro2.png",
+    "descripcion": "Cuadros De Bauhaus Abstractos Decorativos Modernos 35x50cm"
+  },
+  {
+    "id": 3,
+    "idCategoria": "cuadros",
+    "nombre": "Modernos Living Bauhaus",
+    "precio": 4200,
+    "stock": 2,
+    "img": "../img/cuadro3.png",
+    "descripcion": "Cuadros Decorativos Modernos Living Bauhaus (30x45cm) Baldo"
+  },
+  {
+    "id": 4,
+    "idCategoria": "ceramica",
+    "nombre": "TAZA DE CAFÉ KAMA NUDE ",
+    "precio": 3300,
+    "stock": 30,
+    "img": "../img/ceramica1.png",
+    "descripcion": "Set de 1 Taza  de café doble con plato"
+  },
+  {
+    "id": 5,
+    "idCategoria": "ceramica",
+    "nombre": "TAZA DE CAFÉ KAMA NUDE ",
+    "precio": 3300,
+    "stock": 30,
+    "img": "../img/ceramica1.png",
+    "descripcion": "Set de 1 Taza  de café doble con plato"
+  }
+]
