@@ -5,7 +5,7 @@
     "nombre": "Bauhaus Figuras Geometricas",
     "precio": 8000,
     "stock": 10,
-    "img": "../img/cuadro1.png",
+    "img": "https://firebasestorage.googleapis.com/v0/b/reactcoderhouse-a1148.appspot.com/o/cuadro1.png?alt=media&token=f83f492c-5abf-4954-b99e-ea6411396190",
     "descripcion": "Cuadros De Bauhaus Abstractos Decorativos Modernos 35x50cm"
   },
   {
@@ -13,8 +13,8 @@
     "idCategoria": "cuadros",
     "nombre": "Bauhaus Figuras Geometricas",
     "precio": 8800,
-    "stock": 4,
-    "img": "../img/cuadro2.png",
+    "stock": 7,
+    "img": "https://firebasestorage.googleapis.com/v0/b/reactcoderhouse-a1148.appspot.com/o/cuadro2.png?alt=media&token=7ad7cb71-506c-41b5-9f33-a0801ce852b1",
     "descripcion": "Cuadros De Bauhaus Abstractos Decorativos Modernos 35x50cm"
   },
   {
@@ -22,26 +22,71 @@
     "idCategoria": "cuadros",
     "nombre": "Modernos Living Bauhaus",
     "precio": 4200,
-    "stock": 2,
-    "img": "../img/cuadro3.png",
+    "stock": 5,
+    "img": "https://firebasestorage.googleapis.com/v0/b/reactcoderhouse-a1148.appspot.com/o/cuadro3.png?alt=media&token=d70c0d3d-6f2d-4c7b-8c10-279d1cdb0a96",
     "descripcion": "Cuadros Decorativos Modernos Living Bauhaus (30x45cm) Baldo"
   },
   {
     "id": 4,
     "idCategoria": "ceramica",
-    "nombre": "TAZA DE CAFÉ KAMA NUDE ",
-    "precio": 3300,
-    "stock": 30,
-    "img": "../img/ceramica1.png",
-    "descripcion": "Set de 1 Taza  de café doble con plato"
+    "nombre": "Ensaladera Cerámica Grande Artesanal",
+    "precio": 5800,
+    "stock": 12,
+    "img": "https://firebasestorage.googleapis.com/v0/b/reactcoderhouse-a1148.appspot.com/o/ceramica2.webp?alt=media&token=3be91725-660c-4d39-b842-e71f1d652f82",
+    "descripcion": "Ensaladera Decoracion ceramica"
   },
   {
     "id": 5,
     "idCategoria": "ceramica",
-    "nombre": "TAZA DE CAFÉ KAMA NUDE ",
+    "nombre": "Taza de café KAMA NUDE",
     "precio": 3300,
     "stock": 30,
-    "img": "../img/ceramica1.png",
+    "img": "https://firebasestorage.googleapis.com/v0/b/reactcoderhouse-a1148.appspot.com/o/ceramica1.png?alt=media&token=89abcd0e-0e5d-4e78-be80-a196f2578aba",
     "descripcion": "Set de 1 Taza  de café doble con plato"
+  },
+  {
+    "id": 6,
+    "idCategoria": "ceramica",
+    "nombre": "Mate De Cerámica Lineas ",
+    "precio": 2600,
+    "stock": 23,
+    "img": "https://firebasestorage.googleapis.com/v0/b/reactcoderhouse-a1148.appspot.com/o/ceramica3.webp?alt=media&token=6d4b592e-e74a-45e6-9574-79f92a97d4c1",
+    "descripcion": "Mate de ceramica Diseño"
+  },
+  {
+    "id": 7,
+    "idCategoria": "decoracion",
+    "nombre": "Lampara Colgante Premium Hilo ",
+    "precio": 14200,
+    "stock": 9,
+    "img": "https://firebasestorage.googleapis.com/v0/b/reactcoderhouse-a1148.appspot.com/o/decoracion1.jpeg?alt=media&token=c00fca71-0227-47b5-943b-7225677d52ff",
+    "descripcion": " Yute 40x30 Altura"
+  },
+  {
+    "id": 8,
+    "idCategoria": "decoracion",
+    "nombre": "Lampara Velador Vintage Color Oxido Vintage Led",
+    "precio": 6200,
+    "stock": 4,
+    "img": "https://firebasestorage.googleapis.com/v0/b/reactcoderhouse-a1148.appspot.com/o/decoracion2.jpeg?alt=media&token=c37615ad-ee8f-49d7-acb2-d94414b6f2fa",
+    "descripcion": "Lampara Velador Vintage Color Oxido Vintage Led"
+  },
+  {
+    "id": 9,
+    "idCategoria": "decoracion",
+    "nombre": "Alfombra Tipo Persa Roja Medallon Andorra",
+    "precio": 4000,
+    "stock": 16,
+    "img": "https://firebasestorage.googleapis.com/v0/b/reactcoderhouse-a1148.appspot.com/o/decoracion3.jpeg?alt=media&token=fb5a61f6-072c-46ca-81b8-a73c88840936",
+    "descripcion": "100x150cm Kreatex"
+  },
+  {
+    "id": 10,
+    "idCategoria": "dibujos",
+    "nombre": "Caricaturas Argentinas ",
+    "precio": 2700,
+    "stock": 20,
+    "img": "https://firebasestorage.googleapis.com/v0/b/reactcoderhouse-a1148.appspot.com/o/dibujos1.jpeg?alt=media&token=dbaf74b0-54aa-49c8-87f6-8f638363ddd4",
+    "descripcion": "60x20"
   }
 ]

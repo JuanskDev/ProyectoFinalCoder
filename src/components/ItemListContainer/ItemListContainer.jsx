@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
+import { getProducts } from "../../firebase/firebase";
 const ItemListContainer = () => {
   const [productos, setProductos] = useState([]);
 
@@ -9,30 +10,27 @@ const ItemListContainer = () => {
 
   useEffect(() => {
     if (idCategoria) {
-      fetch("../json/productos.json")
-        .then((response) => response.json())
-        .then((productosArray) => {
-          const products = productosArray.filter(
-            (prod) => prod.idCategoria === idCategoria
-          );
-          const productsList = ItemList({ products }); //Array de productos en JS
-          setProductos(productsList);
-        });
+      getProducts().then((prods) => {
+        const products = prods
+          .filter((prod) => prod.stock > 0)
+          .filter((prod) => prod.idCategoria === idCategoria);
+        const productsList = (
+          <ItemList products={products} componente={"item"} />
+        );
+        setProductos(productsList);
+      });
     } else {
-      fetch("./json/productos.json")
-        .then((response) => response.json())
-        .then((products) => {
-          console.log(products);
-          const productsList = ItemList({ products }); //Array de productos en JSX
-          console.log(productsList);
-          setProductos(productsList);
-        });
+      getProducts().then((items) => {
+        const products = items.filter((prod) => prod.stock > 0);
+        const productsList = (
+          <ItemList products={products} componente={"item"} />
+        );
+        setProductos(productsList);
+      });
     }
   }, [idCategoria]);
-  //[] cuando se renderiza
-  //[prop] cuando se renderiza y cuando se actualiza
 
-  return <div className="row justify-content-around m-4">{productos}</div>;
+  return <div className="row justify-content-around  m-4">{productos}</div>;
 };
 
 export default ItemListContainer;

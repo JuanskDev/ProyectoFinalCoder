@@ -30,7 +30,7 @@ const Navbar = () => {
             </ul>
             <Nombre />
             <Register />
-            <CartWidget cantCarrito={5} />
+            <CartWidget />
           </div>
         </div>
       </nav>

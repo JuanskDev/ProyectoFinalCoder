@@ -1,15 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-export const Item = ({ item }) => {
+const Item = ({ item }) => {
   return (
-    <div className="shadow m-2 " style={{ width: "17rem" }}>
+    <div className="shadow m-4  col-sm-4  col-lg-2 rounded divProducto ">
       <img
         src={item.img}
-        className="card-img-top imgAllProd"
-        alt="..."
-        style={{ height: "60%" }}
+        className="card-img-top imageSize"
+        alt={item.nombre}
       />
-      <div className="card-body mx-auto py-2" style={{ width: "85%" }}>
+      <div className="card-body pb-3 mb-sm-5 divSize ">
         <h5 className="card-title ">{item.nombre}</h5>
         <p className="my-2 fw-normal fs-4">
           ${new Intl.NumberFormat("de-DE").format(item.precio)}
@@ -23,3 +22,5 @@ export const Item = ({ item }) => {
     </div>
   );
 };
+
+export default Item;
