@@ -11,7 +11,7 @@ import {
 } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAvnLhZPzOD_CsTfyTxm7HgXO7OABwBT8E",
+  apiKey: process.env.API_KEY,
   authDomain: "reactcoderhouse-a1148.firebaseapp.com",
   projectId: "reactcoderhouse-a1148",
   storageBucket: "reactcoderhouse-a1148.appspot.com",
